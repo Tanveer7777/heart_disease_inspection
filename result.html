@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="C:\Users\User\OneDrive\Documents\Desktop\New folder\static\style.css">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    {% if prediction == 0 %}
+        <p style="color:red;">The person **may have heart disease**. Please consult a doctor.</p>
+    {% elif prediction == 1 %}
+        <p style="color:green;">The person is likely **fit and does not have heart disease**.</p>
+    {% else %}
+        <p>Unable to determine prediction.</p>
+    {% endif %}
+    <br>
+    <a href="/">Go back to Home</a>
+</body>
+</html>
